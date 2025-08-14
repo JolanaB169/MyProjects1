@@ -1,0 +1,31 @@
+# PyCharm IDE
+.idea/
+
+# Python cache a kompilované soubory
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtuální prostředí
+venv/
+env/
+ENV/
+
+# Django specifické
+db.sqlite3
+*.log
+*.pot
+*.mo
+
+# Statické a mediální soubory (pokud generuješ do těchto složek)
+static/
+media/
+
+# Environment variables
+.env
+.env.*
+
+# Operační systém
+.DS_Store
+Thumbs.db
