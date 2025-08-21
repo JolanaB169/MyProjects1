@@ -21,7 +21,7 @@ class Book(models.Model):
     genre = models.ManyToManyField(Genre)
     rating = models.IntegerField(choices=STAR_CHOICES, default=0)
     description = models.TextField()
-    authors = models.ManyToManyField(Author)
+    authors = models.ManyToManyField(Author, related_name='books')
 
     def __str__(self):
         return self.title
